@@ -187,10 +187,25 @@ color: var(--text-accent);
 
 
 /* -----------------------------------------hero */
+.hero-img {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  margin: 0 auto;
+  background-image: url(../images/hero1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+/* linear-gradient(to right, rgba(47, 48, 58, 0.4)), */
+ /* background: #2F303A; */
+
+
+
+
 .hero-start{
- background: #2F303A; 
- text-align: center;
- padding: 200px 0;
+text-align: center;
+padding: 200px 0;
 }
 .hero-start-header{
   color: var(--text-white);
