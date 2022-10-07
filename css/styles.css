@@ -130,10 +130,10 @@ color: var(--text-accent);
 address-tel-emal{
   margin-top: 9px;
 }
- .nav-contacts-footer ,
- .address-tel-emal:hover,
- .nav-contacts-footer, 
- .address-tel-emal:focus {
+.nav-contacts-footer ,
+.address-tel-emal:hover,
+.nav-contacts-footer, 
+.address-tel-emal:focus {
   color: var(--text-accent);}
 
 
@@ -146,7 +146,7 @@ font-weight: 400;
 }
 .address-office:hover,
 .address-office:focus {
- color: var(--text-accent);}
+color: var(--text-accent);}
 
 .address-tel-emal{
   font-style: normal;
@@ -184,7 +184,20 @@ margin-bottom: 0;
 .accent{
 color: var(--text-accent);
 }
-
+.footer-flex{
+display: flex;
+}
+.join{
+  margin-left: 70px;
+  padding-top: 12px;
+}
+.join-word{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--text-white);
+}
 
 /* -----------------------------------------hero */
 .hero-img {
@@ -192,17 +205,11 @@ color: var(--text-accent);
   height: 600px;
   margin: 0 auto;
   margin: 0 auto;
-  background-image: url(../images/hero1.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/hero1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   }
-/* linear-gradient(to right, rgba(47, 48, 58, 0.4)), */
- /* background: #2F303A; */
-
-
-
-
 .hero-start{
 text-align: center;
 padding: 200px 0;
@@ -241,26 +248,30 @@ border: 0;
 
 /*------------------------------------------- benifits */
 .benifits-list{
+display: flex;
+flex-wrap: wrap;
+/* background-color: #2196F3; */
+height: 248px;
+justify-content: space-between;
+}
+
+.iteam-box{
   display: flex;
-  flex-wrap: wrap;
-  }
-  
-  .benifits-iteam {
-    width: 270px;
-    margin-right: 30px;
-  }
-  
-  .benifits-iteam:last-child {
-    margin-right: 0;
+}
+
+.benifits-iteam {
+width: 270px;
+margin-right: 30px;
+}
+
+.benifits-iteam:last-child {
+margin-right: 0;
 }
 
 .invisible{
-  color: var(--text-white)
+color: var(--text-white)
 }
-.benifits-list{
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .title-benifits{
   color: var(--text-header);
   font-weight: 700;
@@ -275,6 +286,28 @@ border: 0;
   line-height: 1.8;
   margin-top: 10px;
   }
+
+
+
+
+.iteam-box {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits-box-icon {
+  
+}
+
+
+
+
  /* --------------------------------------------working */
 .working{
   padding-bottom: 94px;} 
@@ -327,15 +360,6 @@ flex-wrap: wrap;}
 .team-iteam:last-child {
   margin-right: 0;
 }
-.team-job{
-color: var(--main-text);
-font-weight: 400;
-font-size: 16px;
-line-height: 1.18;
-text-align: center;
-margin: top 10px; ;
-margin-bottom: 30px;}
-
 
 .name-worker{
 font-weight: 500;
@@ -346,6 +370,58 @@ color:var(--text-header);
 margin-top: 30px;
 margin-bottom: 10px;
 }
+.team-job{
+color: var(--main-text);
+font-weight: 400;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+margin: top 10px; ;
+margin-bottom: 16px;}
+
+
+
+.team-icon{
+margin-bottom: 30px;
+width: 206px;
+height: 44px;
+margin-left: 32px;
+margin-right: 32px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.icon-list{
+  /* background-color: green; */
+}
+
+.icon-list-nav{
+  border-radius: 50%;
+  background-color: #2F303A;
+}
+
+.icon-list-team :hover{
+background-color: var(--text-accent);
+}
+
+.icon-list-team {
+ background-color: greenyellow;
+  border-radius: 50%;
+  background-position: center;
+}
+
+
+
+
+
+/* ---------------------------------------------------clients */
+.clients-list{
+  margin-top: 50px;
+  border: 1px solid #AFB1B8;
+border-radius: 4px;
+}
+
+
 
 
   /* -------------------------------------------PORTFOLIO ----------------------------------------------*/
@@ -363,7 +439,7 @@ display: flex;
 margin-right: 8px;}
 
 
-.filtr-button: last-child {
+.filtr-button:last-child {
 margin-right: 0;
 }
 
