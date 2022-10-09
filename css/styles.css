@@ -72,9 +72,10 @@ margin: 0;
 }
 .nav-li{
 display: flex;
+gap: 50px;
 }
-.nav-li .item + .item{
-  margin-left: 30px;}
+/* .nav-li .item + .item{
+  margin-left: 30px;} */
 
 /* .nav-li .item:not(:last-child){
   margin-left: 40px;
@@ -246,22 +247,23 @@ color: var(--text-white);
     justify-content: center;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    color:#FFFFFF;}
-
+    color:#FFFFFF;
+  }
 
 .icon-join {
   fill: currentColor;
-  background-position: center;
-}
+  }
 
 .join-link:hover,
-.join-linkk:focus {
-  background-color: var(--text-accent);
+.join-link:focus {
+background-color: var(--text-accent);
 }
 
 .join-link:hover .icon-join,
 .join-linkk:focus .icon-join {
-  fill: #FFFFFF}
+  /* fill:#FFFFFF; */
+  background-color: var(--text-accent)
+}
 
 
 
@@ -478,15 +480,15 @@ border-radius: 50%;
 }
 
 
-.icon-list:hover ,
-.icon-list:focus{
+.icon-list-nav:hover ,
+.icon-list-nav:focus{
 background-color: var(--text-accent);
 
 }
 
 
-.icon-list:hover .icon-list-team,
-.icon-list:focus .icon-list-team {
+.icon-list-nav:hover .icon-list-team,
+.icon-list-nav:focus .icon-list-team {
   fill: #FFFFFF;
 }
 
@@ -507,43 +509,40 @@ gap: 30px;
 .clients-item{
 width: 170px;
 height: 92px;
-border: 1px solid #AFB1B8;
-border-radius: 4px;
 }
 .client-link-icon{
 width: 170px;
 height: 92px;
-  /* display: flex; */
-  align-items: center;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid #AFB1B8;
+border-radius: 4px;
 }
 
 .icon-list-clients{
   fill: #AFB1B8;
-  background-position: center;
 }
 
-
-.clients-item:hover ,
-.clients-item:focus {
+.client-link-icon:hover ,
+.client-link-icon:focus {
   border-color: var(--text-accent);
 }
 
-.clients-item:hover .icon-list-clients {
+.client-link-icon:hover .icon-list-clients {
   fill: var(--text-accent);}
 
-.clients-item:focus .icon-list-clients {
+.client-link-icon:focus .icon-list-clients {
   fill: var(--text-accent);
 }
 
 
   /* -------------------------------------------PORTFOLIO ----------------------------------------------*/
 .filtr-flex{
-display: flex;
-
-  
+display: flex; 
 }
 .filtr{
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -608,7 +607,7 @@ gap: 30px;
 color: var(--text-header);
 font-weight: 700;
 font-size: 18px;
-line-height: 1.2;
+line-height: 2;
 letter-spacing: 0.06em;
 margin-bottom: 4px;
 }
@@ -629,6 +628,5 @@ line-height: 1.7;}
 
 .content-list:focus ,
 .content-list:hover {
-border: 1px solid #EEEEEE;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
